@@ -1,0 +1,30 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/2_0d137p7-wq6.js"
+4:I[39756,["$3"],"default"]
+5:I[37457,["$3"],"default"]
+c:"/_next/static/chunks/29q5riofc542i.js"
+d:I[5500,["$3","$c"],"Image"]
+e:"$Sreact.suspense"
+f:I[35799,["$3","$c"],"CharacterQuiz"]
+10:I[97367,["$3"],"OutletBoundary"]
+13:"ViewportBoundary"
+14:I[97367,["$3"],"$13"]
+15:"MetadataBoundary"
+16:I[97367,["$3"],"$15"]
+17:I[27201,["$3"],"IconMark"]
+7:X
+a:X
+a:C
+b:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"wrap py-12 md:py-16","children":[["$","div",null,{"className":"mx-auto max-w-2xl text-center","children":[["$","p",null,{"className":"eyebrow","children":"The Mighty Su corner"}],["$","h1",null,{"className":"mt-2 text-4xl md:text-5xl","children":"Which Mighty Zoo character are you?"}],["$","p",null,{"className":"mt-3 font-story text-lg","children":"Six quick questions. Then send it to your family and see who they are."}],["$","div",null,{"className":"mt-6 flex justify-center -space-x-3","aria-hidden":"true","children":[["$","$Ld","workhorse",{"src":"/images/characters/workhorse.jpg","alt":"","width":52,"height":52,"className":"h-12 w-12 rounded-full border-[3px] border-paper object-cover"}],["$","$Ld","natalie",{"src":"/images/characters/natalie.jpg","alt":"","width":52,"height":52,"className":"h-12 w-12 rounded-full border-[3px] border-paper object-cover"}],["$","$Ld","smarty",{"src":"/images/characters/smarty.jpg","alt":"","width":52,"height":52,"className":"h-12 w-12 rounded-full border-[3px] border-paper object-cover"}],["$","$Ld","piggy",{"src":"/images/characters/piggy.jpg","alt":"","width":52,"height":52,"className":"h-12 w-12 rounded-full border-[3px] border-paper object-cover"}],["$","$Ld","chaos",{"src":"/images/characters/chaos.jpg","alt":"","width":52,"height":52,"className":"h-12 w-12 rounded-full border-[3px] border-paper object-cover"}],["$","$Ld","drama",{"src":"/images/characters/drama.jpg","alt":"","width":52,"height":52,"className":"h-12 w-12 rounded-full border-[3px] border-paper object-cover"}],["$","$Ld","panda",{"src":"/images/characters/panda.jpg","alt":"","width":52,"height":52,"className":"h-12 w-12 rounded-full border-[3px] border-paper object-cover"}],["$","$Ld","lion",{"src":"/images/characters/lion.jpg","alt":"","width":52,"height":52,"className":"h-12 w-12 rounded-full border-[3px] border-paper object-cover"}]]}]]}],["$","div",null,{"className":"mt-12","children":["$","$e",null,{"fallback":["$","p",null,{"className":"text-center","children":"Loading the quiz…"}],"children":["$","$Lf",null,{}]}]}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/29q5riofc542i.js","async":true}]],["$","$L10",null,{"children":["$","$e",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}],"p":"$@12","v":null,"s":"$7"}}]]
+8:[["children",{"s":"quiz","h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@9","v":"$a","s":"$7"},"c":"$Qb"}]]
+1:[["children",{"s":"mighty-su","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","div",null,{"className":"ms-world min-h-[60vh]","children":["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]}]]}],"p":"$@6","v":null,"s":"$7"},"c":"$Q8"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L14",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0f2845"}]]}],["$","$L16",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$e",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Which Mighty Zoo character are you? Mighty Su quiz | SuPlushies"}],["$","meta","1",{"name":"description","content":"Six quick questions to find your Mighty Su character: the Workhorse, the Worrier, the Know-It-All, the Giver, the Mischief-Maker, the Diva, the Zen One or the Protector."}],["$","meta","2",{"name":"keywords","content":"wholesale toys,trending toys wholesale,blind box wholesale,licensed plush wholesale,anime merchandise wholesale,Pokémon wholesale distributor,Sanrio wholesale,wholesale toy distributor US and China,toy supplier for online sellers,claw machine plush wholesale,Mighty Su"}],["$","link","3",{"rel":"canonical","href":"https://suplushies.com/mighty-su/quiz/"}],["$","meta","4",{"property":"og:title","content":"Which Mighty Zoo character are you? Mighty Su quiz | SuPlushies"}],["$","meta","5",{"property":"og:description","content":"Six quick questions to find your Mighty Su character: the Workhorse, the Worrier, the Know-It-All, the Giver, the Mischief-Maker, the Diva, the Zen One or the Protector."}],["$","meta","6",{"property":"og:site_name","content":"SuPlushies"}],["$","meta","7",{"property":"og:image","content":"https://suplushies.com/images/og-image.jpg"}],["$","meta","8",{"property":"og:type","content":"website"}],["$","meta","9",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","10",{"name":"twitter:title","content":"Which Mighty Zoo character are you? Mighty Su quiz | SuPlushies"}],["$","meta","11",{"name":"twitter:description","content":"Six quick questions to find your Mighty Su character: the Workhorse, the Worrier, the Know-It-All, the Giver, the Mischief-Maker, the Diva, the Zen One or the Protector."}],["$","meta","12",{"name":"twitter:image","content":"https://suplushies.com/images/og-image.jpg"}],["$","link","13",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link","14",{"rel":"icon","href":"/favicon.ico"}],["$","$L17","15",{}]]}]}],null]}],null]}],"p":"$@18","v":null,"s":"$7"}},"a":"$@19","u":"$@1a","b":"jKJHjwhz0HjppUXSbcB_z"}
+11:null
+1a:true
+7:300
+7:C
+19:0
+9:"$undefined"
+6:"$undefined"
+18:"$undefined"
+12:"$undefined"

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 600" width="2000" height="600">
+  <defs>
+    <linearGradient id="flowerGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F88579"/>
+      <stop offset="100%" stop-color="#F46A5E"/>
+    </linearGradient>
+  </defs>
+  <g font-family="Quicksand, 'DM Sans', system-ui, sans-serif" font-weight="700" font-size="380">
+    <text text-anchor="middle" x="1000" y="420">
+      <tspan fill="#F46A5E">Su</tspan><tspan fill="#0F2845">Plush</tspan><tspan fill="#0F2845">ı</tspan><tspan fill="#0F2845">es</tspan>
+    </text>
+  </g>
+</svg>

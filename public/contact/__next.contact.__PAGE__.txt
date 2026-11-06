@@ -1,0 +1,29 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/2_0d137p7-wq6.js"
+4:I[39756,["$3"],"default"]
+5:I[37457,["$3"],"default"]
+a:I[22016,["$3"],""]
+b:I[31187,["$3"],"NetlifyForm"]
+c:I[31187,["$3"],"Field"]
+d:I[31187,["$3"],"Select"]
+e:I[97367,["$3"],"OutletBoundary"]
+f:"$Sreact.suspense"
+12:"ViewportBoundary"
+13:I[97367,["$3"],"$12"]
+14:"MetadataBoundary"
+15:I[97367,["$3"],"$14"]
+16:I[27201,["$3"],"IconMark"]
+7:X
+7:C
+8:X
+9:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"wrap grid items-start gap-10 py-12 md:grid-cols-[1fr_1.3fr] md:py-16","children":[["$","div",null,{"children":[["$","p",null,{"className":"eyebrow","children":"Contact"}],["$","h1",null,{"className":"mt-2 text-4xl font-extrabold md:text-5xl","children":"Say hello"}],["$","p",null,{"className":"mt-4 text-lg text-muted","children":"We reply within 1–2 business days."}],["$","dl",null,{"className":"mt-8 grid gap-5","children":[["$","div",null,{"children":[["$","dt",null,{"className":"font-bold text-navy","children":"Email"}],["$","dd",null,{"children":["$","a",null,{"className":"text-coral-deep underline underline-offset-2","href":"mailto:su@suplushies.com","children":"su@suplushies.com"}]}]]}],""]}],["$","p",null,{"className":"mt-8 rounded-xl bg-mist p-5 text-[0.95rem]","children":["Opening a wholesale account? The ",["$","$La",null,{"href":"/wholesale#apply","className":"font-semibold text-navy underline underline-offset-2","children":"wholesale application"}]," is the fastest route."]}]]}],["$","div",null,{"className":"card p-6 md:p-8","children":["$","$Lb",null,{"name":"contact","submitLabel":"Send message","className":"grid gap-4","children":[["$","div",null,{"className":"grid gap-4 sm:grid-cols-2","children":[["$","$Lc",null,{"label":"Name","name":"name","required":true,"autoComplete":"name"}],["$","$Lc",null,{"label":"Email","name":"email","type":"email","required":true,"autoComplete":"email"}],["$","$Lc",null,{"label":"Phone","name":"phone","type":"tel","autoComplete":"tel"}],["$","$Lc",null,{"label":"Company or store","name":"company","autoComplete":"organization"}],["$","$Lc",null,{"label":"Country","name":"country","autoComplete":"country-name"}],["$","$Lc",null,{"label":"Where you sell","name":"selling-regions","placeholder":"e.g. US, Canada, online worldwide"}]]}],["$","$Ld",null,{"label":"Topic","name":"topic","required":true,"options":["Wholesale","An existing order","Licensing or partnerships","Press","Mighty Su","Something else"]}],["$","$Lc",null,{"label":"Message","name":"message","type":"textarea","required":true}]]}]}]]}],null,["$","$Le",null,{"children":["$","$f",null,{"name":"Next.MetadataOutlet","children":"$@10"}]}]]}],"p":"$@11","v":null,"s":"$8"}}]]
+1:[["children",{"s":"contact","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L13",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","meta","2",{"name":"theme-color","content":"#0f2845"}]]}],["$","$L15",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$f",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Contact | SuPlushies"}],["$","meta","1",{"name":"description","content":"Contact SuPlushies about wholesale accounts, orders, licensing, press or Mighty Su."}],["$","meta","2",{"name":"keywords","content":"wholesale toys,trending toys wholesale,blind box wholesale,licensed plush wholesale,anime merchandise wholesale,Pokémon wholesale distributor,Sanrio wholesale,wholesale toy distributor US and China,toy supplier for online sellers,claw machine plush wholesale,Mighty Su"}],["$","meta","3",{"property":"og:title","content":"Contact | SuPlushies"}],["$","meta","4",{"property":"og:description","content":"Contact SuPlushies about wholesale accounts, orders, licensing, press or Mighty Su."}],["$","meta","5",{"property":"og:site_name","content":"SuPlushies"}],["$","meta","6",{"property":"og:image","content":"https://suplushies.com/images/og-image.jpg"}],["$","meta","7",{"property":"og:type","content":"website"}],["$","meta","8",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","9",{"name":"twitter:title","content":"Contact | SuPlushies"}],["$","meta","10",{"name":"twitter:description","content":"Contact SuPlushies about wholesale accounts, orders, licensing, press or Mighty Su."}],["$","meta","11",{"name":"twitter:image","content":"https://suplushies.com/images/og-image.jpg"}],["$","link","12",{"rel":"icon","href":"/favicon.svg","type":"image/svg+xml"}],["$","link","13",{"rel":"icon","href":"/favicon.ico"}],["$","$L16","14",{}]]}]}],null]}],null]}],"p":"$@17","v":null,"s":"$8"}},"a":"$@18","u":"$@19","b":"jKJHjwhz0HjppUXSbcB_z"}
+10:null
+19:true
+8:300
+8:C
+18:0
+6:"$undefined"
+17:"$undefined"
+11:"$undefined"

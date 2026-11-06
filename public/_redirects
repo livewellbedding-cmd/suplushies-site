@@ -1,0 +1,36 @@
+# Old Lovable addresses -> new pages (Netlify reads this file on drag-and-drop deploys)
+/shop/blind-boxes   /catalog/?category=blind-boxes   301
+/shop/plushies      /catalog/?category=plush         301
+/shop/keychains     /catalog/?category=keychains     301
+/shop               /catalog/                        301
+/shop/*             /catalog/                        301
+/product/:slug      /catalog/:slug/                  301
+/cart               /inquiry/                        301
+/wishlist           /inquiry/                        301
+/checkout           /wholesale/                      301
+/wholesale/login    /wholesale/                      302
+/wholesale/portal   /wholesale/                      302
+/mighty-su/the-family-zoo  /mighty-su/               301
+/mighty-su/founders-club   /mighty-su/              301
+
+# Nov 2026: retailer Journal removed; Mighty Su Journal became Stories
+/journal                         /start-selling/        301
+/journal/*                       /start-selling/        301
+/mighty-su/journal               /mighty-su/stories/    301
+/mighty-su/journal/*             /mighty-su/stories/    301
+/mighty-su/stories/workhorses-big-day                  /mighty-su/stories/workhorses-grumpy-morning/   301
+/mighty-su/stories/workhorses-big-day/                 /mighty-su/stories/workhorses-grumpy-morning/   301
+/mighty-su/stories/2026-10-30-natalie-and-the-umbrella-sky   /mighty-su/stories/natalie-and-the-cloudy-picnic/   301
+/mighty-su/stories/2026-10-30-natalie-and-the-umbrella-sky/  /mighty-su/stories/natalie-and-the-cloudy-picnic/   301
+/mighty-su/stories/lanterns-of-listening               /mighty-su/stories/   301
+/mighty-su/stories/lanterns-of-listening/              /mighty-su/stories/   301
+/mighty-su/stories/the-lost-map-of-mini-missions       /mighty-su/stories/smarty-pants-and-the-hedge-maze/   301
+/mighty-su/stories/the-lost-map-of-mini-missions/      /mighty-su/stories/smarty-pants-and-the-hedge-maze/   301
+/mighty-su/stories/what-you-can-with-what-you-have     /mighty-su/stories/   301
+/mighty-su/stories/what-you-can-with-what-you-have/    /mighty-su/stories/   301
+/mighty-su/the-mighty-zoo        /mighty-su/            301
+# Hand-built pages have no Next.js payload. Answer the router's link prefetch with a tiny 404 instead of the full 404 page.
+/mighty-su/__next._tree.txt          /assets/nf.txt   404
+/mighty-su/stories/__next._tree.txt  /assets/nf.txt   404
+/start-selling/__next._tree.txt      /assets/nf.txt   404
+/find-a-store/__next._tree.txt       /assets/nf.txt   404

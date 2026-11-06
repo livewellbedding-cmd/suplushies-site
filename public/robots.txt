@@ -1,0 +1,6 @@
+User-Agent: *
+Allow: /
+Disallow: /inquiry
+Disallow: /thanks
+
+Sitemap: https://suplushies.com/sitemap.xml
