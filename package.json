@@ -1,0 +1,1 @@
+{"name":"suplushies-site","private":true,"type":"module","description":"suplushies.com: static site export plus the wholesale order-history function","dependencies":{"@netlify/blobs":"8.1.0"}}
