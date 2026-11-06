@@ -1,0 +1,8 @@
+# Static site (pre-built export) + one function for wholesale order history.
+[build]
+  publish = "public"
+  command = "echo 'static site, no build step'"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
