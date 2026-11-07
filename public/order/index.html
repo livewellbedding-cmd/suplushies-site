@@ -174,12 +174,11 @@ dialog::backdrop{background:rgba(8,16,32,.55)}
 <section class="intro"><div class="wrap">
   <div>
     <h1 id="hello">Build your order from <em>in-stock</em> licensed collectibles</h1>
-    <p id="introP">Enter quantities by the piece. Blind boxes go up one display at a time, and your account pricing and full-case discounts apply as you type. When you submit, Su reviews the order and sends your invoice.</p>
+    <p id="introP">Enter quantities by the piece. Blind boxes go up one display at a time, and your account pricing applies as you type. When you submit, Su reviews the order and sends your invoice.</p>
   </div>
   <ul class="rules">
     <li><b>Minimum order</b><span>$2,000 per order</span></li>
     <li><b>Blind boxes</b><span>Sold by the display (one display minimum)</span></li>
-    <li><b>Case pricing</b><span id="caseRule">Extra discount on any item ordered by the full case</span></li>
     <li id="brkRule" hidden><b>Order discount</b><span id="brkText"></span></li>
     <li><b>Shipping</b><span>From our New York warehouse at our UPS contract rates, added to the invoice</span></li>
   </ul>
@@ -287,9 +286,7 @@ function save(){ if(ACCT.preview) return; try{ localStorage.setItem(KEY, JSON.st
 
 function unitPrice(it, qty){
   let u = r2(it.price*(1-ACCT.d));
-  const atCase = it.caseQty && it.caseQty>it.step && qty>=it.caseQty;
-  if(atCase) u = r2(u*(1-ACCT.cd));
-  return {u, atCase};
+  return {u, atCase:false};
 }
 function snap(it, q){
   q = Math.max(0, Math.floor(+q||0));
@@ -306,13 +303,13 @@ if(ACCT.linked){
   const t = document.createElement('span'); t.className='chip tier';
   t.textContent = ACCT.d ? (Math.round(ACCT.d*1000)/10)+'% off every item' : (ACCT.breaks.length ? 'Order-size discounts' : 'Standard pricing');
   acct.append(b,t);
-  if(HAS_INTEREST) document.getElementById('introP').textContent='We started you on the collections and product types you told us about. Enter quantities by the piece: blind boxes go up one display at a time, and your account pricing and full-case discounts apply as you type. Submit when ready and Su will confirm stock and send your invoice.';
+  if(HAS_INTEREST) document.getElementById('introP').textContent='We started you on the collections and product types you told us about. Enter quantities by the piece: blind boxes go up one display at a time, and your account pricing applies as you type. Submit when ready and Su will confirm stock and send your invoice.';
   if(ACCT.contact) document.getElementById('hello').innerHTML = 'Hi '+esc(ACCT.contact)+', build your order from <em>in-stock</em> licensed collectibles';
 }else{
   const t=document.createElement('span'); t.className='chip'; t.textContent='Catalog prices shown. Use the link in your email for your account pricing.'; acct.append(t);
 }
 if(ACCT.breaks.length){ document.getElementById('brkRule').hidden=false; document.getElementById('brkText').textContent = ACCT.breaks.map(b=>b.pct+'% off orders of '+fmt0(b.min)+'+').join(', '); }
-document.getElementById('caseRule').textContent = ACCT.cd ? 'Extra '+Math.round(ACCT.cd*100)+'% off any item ordered by the full case' : 'Full-case pricing available on request';
+
 function esc(s){ return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 
 /* ---------- tabs ---------- */
@@ -377,7 +374,7 @@ function paintCard(c,it){
   const per=document.createElement('span'); per.className='per'; per.textContent = it.step>1 ? 'per pc · '+fmt(r2(u*it.step))+' per display' : 'each'; pr.append(per);
   const h=c.querySelector('.hint'); h.className='hint'; h.textContent='';
   if(it.stock!=='in'){ h.textContent=it.notes||'Out of stock'; return; }
-  const caseOk = it.caseQty && it.caseQty>it.step && ACCT.cd>0;
+  const caseOk = false;
   if(q && atCase){ h.className='hint case'; h.textContent='Case price applied · '+q+' pcs = '+fmt(r2(u*q)); }
   else if(q && caseOk){ const need=it.caseQty-q; h.className='hint nudge'; h.textContent='Add '+need+' more for case price ('+it.caseQty+' pcs)'; }
   else if(q){ h.textContent=q+' pcs = '+fmt(r2(u*q)); }
@@ -491,9 +488,9 @@ document.getElementById('form').addEventListener('submit', async e=>{
   const err=document.getElementById('err');
   if(!f('f_business')||!f('f_contact')||!f('f_ship')||!/^\S+@\S+\.\S+$/.test(f('f_email'))){ err.textContent='Please fill in business name, your name, a valid email and the ship-to address.'; return; }
   const o=compute();
-  const code='SUORDER1:'+JSON.stringify({a:ACCT.id,t:ACCT.tier,d:ACCT.d,cd:ACCT.cd,op:o.opct,l:o.lines.map(l=>[l.it.id,l.q,l.u])});
+  const code='SUORDER1:'+JSON.stringify({a:ACCT.id,t:ACCT.tier,d:ACCT.d,op:o.opct,l:o.lines.map(l=>[l.it.id,l.q,l.u])});
   const data={'form-name':'wholesale-order','bot-field':'',account:ACCT.id,business:f('f_business'),contact:f('f_contact'),email:f('f_email'),phone:f('f_phone'),
-    ship_to:f('f_ship'),notes:f('f_notes'),tier:(ACCT.d?(Math.round(ACCT.d*1000)/10)+'% off':'Standard')+' / case '+Math.round(ACCT.cd*100)+'%'+(ACCT.breaks.length?' / order steps '+ACCT.breaks.map(b=>b.pct+'%@'+b.min).join(','):''),
+    ship_to:f('f_ship'),notes:f('f_notes'),tier:(ACCT.d?(Math.round(ACCT.d*1000)/10)+'% off':'Standard')+(ACCT.breaks.length?' / order steps '+ACCT.breaks.map(b=>b.pct+'%@'+b.min).join(','):''),
     item_count:String(o.lines.length),units:String(o.units),list_total:fmt(o.list),subtotal:fmt(o.sub),order_discount:o.opct?o.opct+'% (−'+fmt(o.odisc)+')':'',total:fmt(o.total),
     lines:o.lines.map(l=>l.q+' x '+l.it.name+(l.it.upc?' ['+l.it.upc+']':'')+' @ '+fmt(l.u)+' = '+fmt(l.t)).join('\n'),order_code:code};
   const btn=document.getElementById('submit'); btn.disabled=true; btn.textContent='Sending…';
