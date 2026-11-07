@@ -338,8 +338,8 @@ function card(it){
   const c=document.createElement('article'); c.className='card'+(q?' on':'')+(it.stock!=='in'?' out':''); c.dataset.id=it.id;
   const ph=document.createElement('div'); ph.className='ph';
   const mono=document.createElement('span'); mono.className='mono'; mono.textContent=initials(it); ph.append(mono);
-  if(it.upc && LIVE){
-    const img=new Image(); img.loading='lazy'; img.alt=it.name; img.src='/images/products/'+encodeURIComponent(it.upc.split('/')[0].trim())+'.jpg';
+  if(LIVE){
+    const img=new Image(); img.loading='lazy'; img.alt=it.name; img.width=360; img.height=360; img.src='/order/img/'+encodeURIComponent(it.id)+'.jpg';
     img.onerror=()=>img.remove(); img.onload=()=>mono.remove(); ph.append(img);
   }
   if(it.stock!=='in'){ const f=document.createElement('span'); f.className='flag oos'; f.textContent='Out of stock'; ph.append(f); }
@@ -522,7 +522,7 @@ function renderHist(){
     const row=document.createElement('div'); row.className='ho';
     const when=new Date(o.at); const d=document.createElement('div'); d.className='d';
     d.textContent=when.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})+' · '+fmt(o.total||o.subtotal||0);
-    const m=document.createElement('div'); m.className='m'; m.textContent=o.lines.length+' items · '+o.units+' pcs · '+(o.status||'Submitted');
+    const m=document.createElement('div'); m.className='m'; m.textContent=o.lines.length+(o.lines.length===1?' item · ':' items · ')+o.units+' pcs · '+(o.status||'Submitted');
     const acts=document.createElement('div'); acts.className='acts';
     const b=document.createElement('button'); b.type='button'; b.className='btn ghost'; b.textContent='Reorder';
     b.onclick=()=>reorder(o); acts.append(b);
@@ -536,7 +536,7 @@ function reorder(o){
   let added=0, skipped=0;
   o.lines.forEach(l=>{ const it=CAT.find(i=>i.id===l[0]); if(!it||it.stock!=='in'){ skipped++; return; } const q=snap(it,l[1]); if(q){ cart[it.id]=q; added++; } });
   save(); paint();
-  const n=document.getElementById('histNote'); n.textContent=added+' items added to your order'+(skipped?', '+skipped+' no longer in stock':'')+'. Adjust quantities below.';
+  const n=document.getElementById('histNote'); n.textContent=added+(added===1?' item':' items')+' added to your order'+(skipped?', '+skipped+' no longer in stock':'')+'. Adjust quantities below.';
   if(window.matchMedia('(max-width:900px)').matches){ sheet.classList.add('open'); closeB.hidden=false; }
 }
 async function loadHist(){
